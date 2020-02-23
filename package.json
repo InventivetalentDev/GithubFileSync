@@ -1,0 +1,19 @@
+{
+  "name": "github-file-sync",
+  "version": "1.0.0",
+  "description": "Utility to sync files across multiple GitHub repos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "list": "node index.js list",
+    "sync": "node index.js sync",
+    "merge": "node index.js merge"
+  },
+  "author": "Haylee Schäfer",
+  "license": "MIT",
+  "dependencies": {
+    "github-api": "^3.3.0",
+    "probot": "^9.9.5"
+  }
+}
