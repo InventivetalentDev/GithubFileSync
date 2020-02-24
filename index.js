@@ -181,7 +181,7 @@ let repoListCallback = async (err, repos) => {
     }
     console.log("Found " + repos.length + " repos");
     for await (let repo of repos) {
-        if (repo.archived) continue;
+        if (repo.archived || repo.fork) continue;
         try {
             await processRepo(repo);
         } catch (e) {
